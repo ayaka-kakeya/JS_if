@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    // ここに処理を記述
+    var input = document.getElementById("value");
+    $("#button").click(function(){
+      if (input.value==1){
+        document.getElementById("box").style.backgroundColor="red";
+      }else if(input.value==2){
+        document.getElementById("box").style.backgroundColor="green";
+      }else {
+        document.getElementById("box").style.backgroundColor="blue";
+      }
+    })
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
